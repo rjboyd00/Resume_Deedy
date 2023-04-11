@@ -1,0 +1,266 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Ryan}{Boyd}{ \urlstyle{same}\href{http://rjboyd.com}{rjboyd.com} | 
+\href{mailto:rjboyd00@gmail.com}{rjboyd00@gmail.com} | 415.306.2941 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.32\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Arizona State University}
+\descript{PhD Biochemistry, Fromme Lab}
+\location{Nov 2021 | Tempe, AZ}
+Center for Applied Structural Discovery \\
+Biodesign Institute \\
+\sectionsep
+
+% \subsection{Mayo Clinic}
+% \descript{Research Affiliate, Borad Lab}
+% \location{Jan 2022 | Scottsdale, Arizona}
+% \sectionsep
+
+\subsection{University of California,\\ Davis}
+\descript{BS in Pharmaceutical Chemistry}
+\location{June 2015 | Davis, CA}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/rjboyd00}{\bf rjboyd00} \\
+LinkedIn://  \href{https://www.linkedin.com/in/rjboyd00}{\bf rjboyd00} \\
+Twitter://  \href{https://twitter.com/rjboyd000}{\bf @rjboyd000} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+%\subsection{Wet Lab}
+%\location{Over 5000 lines:}
+\location{Primary Techniques}
+Protein structure analysis \textbullet{} Protein structure modeling (PyMol, ChimeraX, VMD) \textbullet{} Cryo-EM \textbullet{} Relion \textbullet{} Phenix \textbullet{} Crystallography \textbullet{} Chromatography \textbullet{} Protein purification ($\ddot{A}$KTA FPLC) \textbullet{} Protein QC \textbullet{} Protein developability assessment \textbullet{} Analytical SEC \textbullet{} Mass spectrometry \textbullet{} Post-translational modification characterization \textbullet{} DLS \textbullet{} Protein-protein interaction (SPR, MST, Mass photometry, \& co-crystallization) \textbullet{} Antibodies \textbullet{} GEFs \textbullet{} Small G-proteins \\ 
+\location{Other skills:}
+Protein engineering (Rosetta) \textbullet{} Structural bioinformatics \textbullet{} Homology modeling (AlphaFold) \textbullet{} Python \textbullet{} Unix/Bash \textbullet{} Molecular Dynamics (NAMD) \textbullet{} Ligand docking \textbullet{} Membrane proteins \textbullet{} Detergents \& lipids \textbullet{} Enzyme kinetics \textbullet{} HT assay \textbullet{} Western blot \textbullet{} Vector engineering (Geneious) \textbullet{} Gibson assembly \textbullet{} Bispecifics \textbullet{} Knob-in-holes \textbullet{} Cell culture \textbullet{} Protein expression \\
+
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+% \subsection{Graduate}
+Advanced immunology \\
+Cancer biochemistry \\
+Microbiology \& virology lab \\
+Systemic physiology \\
+Computational drug design \\
+% Molecular simulation \\
+% Chemical biology \\
+Biomolecular engineering \\
+Data science boot camp (online) \\
+Deep learning boot camp (online) \\
+Rosetta workshop \\
+
+% Advanced Interactive Graphics \\
+% Compilers + Practicum \\
+% Cloud Computing \\
+% Evolutionary Computation \\
+% Defending Computer Networks \\
+% Machine Learning \\
+\sectionsep
+
+% \subsection{Undergraduate}
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+% Unix Tools and Scripting \\
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{NGM Biopharmaceuticals}
+\descript{| Scientist I, Protein Science }
+\location{June 2022 - May 2023 | South San Francisco, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Purification, formulation, QC, and developability assessment of proteins to support research operations at NGM
+\item Purified, performed QC, and supported protein engineering efforts for novel, highly innovative antibody platform technologies
+\item Delivered developability assessments of late-stage therapeutic targets as part of ocular projects in collaboration with a major pharma company
+\item Optimized modular bispecific assembly and purification pipeline for early stage IND enabling immuneo-oncology research 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Weiss Asset Management}
+\descript{| Consultant }
+\location{March 2023 – Present | San Francisco, CA}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Support equity research in the biotech sector by reading background literature and assessing the technical viability of new drugs and technologies.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Marrone Bio Innovations}
+\descript{| Junior scientist }
+\location{May 2013 – Aug 2013 | Mountain View, CA}
+\begin{tightemize}
+\item Performed natural products chemistry tasks, including extraction, purification, and fractionation of plant and microbial samples, and analysis of small molecules with techniques including HPLC, LCMS, GC, FT-IR, and NMR.
+\end{tightemize}
+% \sectionsep
+
+% \runsubsection{Phabricator}
+% \descript{| Open Source Contributor \& Team Leader}
+% \location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+% \begin{tightemize}
+% \item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+% \item I created the Meme generator and more in PHP and Shell.
+% \item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Fromme Lab}
+\descript{| Graduate student researcher}
+\location{Aug 2016 – Nov 2021 | Center for Applied Structural Discovery, Biodesign Institute | Tempe, AZ}
+Highly independent structural biologist PhD student responsible for all aspects of experimental planning, execution, and analysis of multiple projects using cryo-EM and crystallography to study cancer, immunology, and virology. 
+\sectionsep
+
+\runsubsection{Borad Lab}
+\descript{| Research affiliate}
+\location{Mar 2020 – Dec 2021 | Mayo Clinic | Scottsdale, AZ}
+Co-lead scientist in ASU-Mayo-AstraZeneca collaboration, responsible for structural elucidation of AstraZeneca’s Vaxzevria Covid-19 vaccine vector. Advised and supported several projects related to VSV virology and oncology. 
+\sectionsep
+
+\runsubsection{Siegel Lab}
+\descript{| Research assistant}
+\location{Aug 2013 – Jun 2016 | UC Davis Genome Center | Davis, CA}
+Lead researcher mentoring a team of undergraduates using computational methods for rational enzyme engineering. 
+% Performed and managed lab tasks including designing, cloning, expressing, purifying, and characterizing enzymes.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
